@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  body { background-color: #050505; color: white; font-family: sans-serif; }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+  }
+  
+  /* Animated Logo Effect */
+  .logo-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+}
