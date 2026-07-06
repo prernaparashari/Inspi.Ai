@@ -1,4 +1,4 @@
-const AUTH_BASE = '/api/auth';
+const AUTH_BASE = 'https://inspi-ai.onrender.com/api/auth';
 
 async function handle(res) {
   const data = await res.json().catch(() => ({}));

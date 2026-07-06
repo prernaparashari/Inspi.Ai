@@ -1,5 +1,5 @@
 
-const CHAT_ENDPOINT = '/api/chat/gemini';
+const CHAT_ENDPOINT = 'https://inspi-ai.onrender.com/api/chat/gemini';
 
 export async function sendChatMessage(message, history = []) {
   try {
